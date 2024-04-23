@@ -1,15 +1,16 @@
-// const sentense = 'Hello my friends!'
+import {sum} from './01';
 
-export function sum(a: number, b: number) {
-	return a + b
-}
+test('sum should be correct', () => {
+	// * подготовительные данные
+	const a = 1
+	const b = 2
+	const c = 3
 
-export function mult(a: number, b: number) {
-	return a * b
-}
+	// * действие
+	const result1 = sum(a, b)
+	const result2 = sum(b, c)
 
-// function splitIntoWords(sentense: string) {
-// 	return [
-// 		'hello', 'my', 'friends'
-// 	]
-// }
+	// 	* ожидаем результат
+	expect(result1).toBe(3)
+	expect(result2).toBe(5)
+})
