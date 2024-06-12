@@ -1,5 +1,16 @@
 import {mult, splitIntoWords, sum} from './01'
 
+// * а можно так сделать подготовительные данные, что бы не затирались значения с TypeScript
+let a: number
+let b: number
+let c: number
+
+beforeEach(() => {
+	a = 1
+	b = 2
+	c = 3
+})
+
 test('sum should be correct', () => {
 	// * подготовительные данные (data)
 	const a = 1
@@ -43,9 +54,9 @@ test('splitting into should be correct', () => {
 	expect(result1[2]).toBe('friend')
 
 	expect(result2.length).toBe(5)
-	expect(result1[0]).toBe('JS')
-	expect(result1[1]).toBe('the')
-	expect(result1[2]).toBe('best')
-	expect(result1[3]).toBe('programming')
-	expect(result1[4]).toBe('language')
+	expect(result2[0]).toBe('js')
+	expect(result2[1]).toBe('the')
+	expect(result2[2]).toBe('best')
+	expect(result2[3]).toBe('programming')
+	expect(result2[4]).toBe('language')
 })

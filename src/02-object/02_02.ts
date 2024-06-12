@@ -8,10 +8,10 @@ export type AddressType = {
 }
 
 export type HousesType = {
+	id?: number
 	buildedAt: number
 	repaired: boolean
 	address: AddressType
-
 }
 
 export type GovernmentBuildingType = {
@@ -19,8 +19,6 @@ export type GovernmentBuildingType = {
 	budget: number
 	staffCount: number
 	address: AddressType
-
-
 }
 
 export type CityType = {

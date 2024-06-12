@@ -1,5 +1,8 @@
 import { CityType } from '../02-object/02_02'
-import { demolishHousesOnTheStreet } from './04_2'
+import {
+	demolishHousesOnTheStreet,
+	getBuildingsWithStaffCountGreaterThen,
+} from './04_2'
 
 let city: CityType
 
